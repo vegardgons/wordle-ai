@@ -40,9 +40,9 @@ The most important classes of this program are:
  - `WordleAnswer` is the class that contains the secret word that the user needs to guess.
  - `WordleWordList` is the class that contains all the words that the user can choose and all the words that can be the answer.
 
-Here is an UML diagram of the most important classes:
+Here is a UML diagram of the most important classes (you can find the image under /images if you want a better look):
 
-<img align="center" src="images/INF102_Wordle_Diagram.png" width="700"/>
+<img align="center" src="images/INF102_Wordle_Diagram_h24.png" width="700"/>
 
 
 # Part 1 - Finish the game
