@@ -10,8 +10,9 @@ The runtime should be expressed using these three parameters:
 
 
 ## Task 1 - matchWord
-* `WordleAnswer::matchWord`: O(?)
+* `WordleAnswer::matchWord`: O(n)
     * *Insert description of why the method has the given runtime*
+    The runtime of the code inside the loops is O(1), and the loops iterate n times, where n is the length of the word. Therefore, the given runtime of matchWord is O(n).
 
 ## Task 2 - EliminateStrategy
 * `WordleWordList::eliminateWords`: O(?)

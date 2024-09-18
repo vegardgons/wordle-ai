@@ -95,22 +95,22 @@ public class WordleAnswer {
     HashMap<Character, Integer> charCount = new HashMap<>();
 
     // Creating the hashmap
-    for (int i = 0; i < wordLength; i++) {
-      char answerChar = answer.charAt(i);
-      charCount.put(answerChar, charCount.getOrDefault(answerChar, 0) + 1);
+    for (int i = 0; i < wordLength; i++) { // n * O(1) = O(n)
+      char answerChar = answer.charAt(i);  
+      charCount.put(answerChar, charCount.getOrDefault(answerChar, 0) + 1); 
     }
 
     // Loop for correct characters
-    for (int i = 0; i < wordLength; i++) {
+    for (int i = 0; i < wordLength; i++) {        // n * O(1) = O(n) 
       if (guess.charAt(i) == answer.charAt(i)) {
-        feedback[i] = AnswerType.CORRECT;
+        feedback[i] = AnswerType.CORRECT; 
         char correctChar = guess.charAt(i);
         charCount.put(correctChar, charCount.get(correctChar) - 1);
       }
     }
 
     // Loop for wrong or misplaced
-    for (int i = 0; i < wordLength; i++) {
+    for (int i = 0; i < wordLength; i++) {  // n * O(1) = O(n)
       if (feedback[i] != AnswerType.CORRECT) {
         char guessChar = guess.charAt(i);
         if (charCount.getOrDefault(guessChar, 0) > 0) {
