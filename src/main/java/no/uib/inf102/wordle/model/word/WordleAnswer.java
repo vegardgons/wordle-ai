@@ -3,7 +3,6 @@ package no.uib.inf102.wordle.model.word;
 import java.util.List;
 import java.util.Random;
 import java.util.HashMap;
-import java.util.Map;
 
 import no.uib.inf102.wordle.model.Dictionary;
 
