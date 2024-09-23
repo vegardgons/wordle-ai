@@ -15,8 +15,9 @@ The runtime should be expressed using these three parameters:
     The runtime of the code inside the loops is O(1), and the loops iterate n times, where n is the length of the word. Therefore, the given runtime of matchWord is O(n).
 
 ## Task 2 - EliminateStrategy
-* `WordleWordList::eliminateWords`: O(?)
+* `WordleWordList::eliminateWords`: O(n)
     * *Insert description of why the method has the given runtime*
+    The runtime of creating a list is O(1), the runtime for checking word against possible words is O(n). Therefore, the rundime of EliminateWords is O(n)
 
 ## Task 3 - FrequencyStrategy
 * `FrequencyStrategy::makeGuess`: O(?)

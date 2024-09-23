@@ -61,11 +61,11 @@ public class WordleWordList {
    * @param feedback
    */
   public void eliminateWords(WordleWord feedback) {
-    List<String> listCopy = new ArrayList<String>();
+    List<String> listCopy = new ArrayList<String>(); // O(1)
 
-    for (String word : possibleAnswers) {
-      if (WordleWord.isPossibleWord(word, feedback)) {
-        listCopy.add(word);
+    for (String word : possibleAnswers) { // n * O(1)
+      if (WordleWord.isPossibleWord(word, feedback)) { // O(1)
+        listCopy.add(word); // O(1)
       }
     }
     this.possibleAnswers = listCopy;
