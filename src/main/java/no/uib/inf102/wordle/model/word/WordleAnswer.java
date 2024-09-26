@@ -84,7 +84,7 @@ public class WordleAnswer {
    * @param answer
    * @return
    */
-  public static WordleWord matchWord(String guess, String answer) {
+  public static WordleWord matchWord(String guess, String answer) { // O(n)
     int wordLength = answer.length();
     if (guess.length() != wordLength)
       throw new IllegalArgumentException(
