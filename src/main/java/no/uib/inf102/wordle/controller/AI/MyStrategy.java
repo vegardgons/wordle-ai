@@ -37,7 +37,7 @@ public class MyStrategy implements IStrategy {
     if (!filteredGuesses.isEmpty()) {
         possibleWords = filteredGuesses;
     } else {
-        possibleWords = guesses.possibleAnswers();  // Fallback to the original word list
+        possibleWords = guesses.possibleAnswers();
     }
 
     for (String word : possibleWords) {
@@ -54,16 +54,16 @@ public class MyStrategy implements IStrategy {
   return bestGuess;
   }
 
-  private List<HashMap<Character, Integer>> calculateLetterFrequency() {
+  private List<HashMap<Character, Integer>> calculateLetterFrequency() { 
     int wordLength = guesses.possibleAnswers().get(0).length();
 
-    // Initialize list with a HashMap for each position in the word
+    
     List<HashMap<Character, Integer>> frequencyMap = new ArrayList<>();
     for (int i = 0; i < wordLength; i++) {
       frequencyMap.add(new HashMap<>());
     }
 
-    // Fill the frequency map with letter frequencies at each position
+  
     for (String word : guesses.possibleAnswers()) {
       for (int i = 0; i < word.length(); i++) {
         char letter = word.charAt(i);
