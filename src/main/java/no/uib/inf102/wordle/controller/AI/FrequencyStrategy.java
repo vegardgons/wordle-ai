@@ -28,7 +28,6 @@ public class FrequencyStrategy implements IStrategy {
       guesses.eliminateWords(feedback);
     }
 
-    // Changed to use List of HashMaps
     List<HashMap<Character, Integer>> frequencyMap = calculateLetterFrequency();
 
     String bestGuess = "";
