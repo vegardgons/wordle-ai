@@ -1,5 +1,3 @@
-# Wordle - Semester assignment 1
-
 <img align="right" src="images/Wordle_example.gif" width="400"/>
 
 # Wordle AI 🎯  
