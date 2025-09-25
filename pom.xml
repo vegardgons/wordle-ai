@@ -5,13 +5,13 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>INF102</groupId>
-  <artifactId>Semesteroppgave1</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <groupId>io.github.vegardgons</groupId>
+  <artifactId>wordle-ai</artifactId>
+  <version>0.1.0-SNAPSHOT</version>
 
-  <name>Semesteroppgave1</name>
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+  <name>Wordle AI</name>
+
+  <url>https://github.com/vegardgons/wordle-ai</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
